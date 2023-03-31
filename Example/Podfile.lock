@@ -1,0 +1,16 @@
+PODS:
+  - HYBaseTool (0.1.0)
+
+DEPENDENCIES:
+  - HYBaseTool (from `../`)
+
+EXTERNAL SOURCES:
+  HYBaseTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HYBaseTool: e5c45ede509f478e1f20d0a9b873a7e054259740
+
+PODFILE CHECKSUM: 3ae57629f4e5d0f8ec94028e03fb4140b91c81af
+
+COCOAPODS: 1.11.2
