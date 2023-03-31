@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,8 +39,8 @@
 /* Begin PBXFileReference section */
 		13031FFE000C96DFADFC1830 /* Pods-HYBaseTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYBaseTool_Tests.release.xcconfig"; path = "Target Support Files/Pods-HYBaseTool_Tests/Pods-HYBaseTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2B885DA33A3D0B2D36B98502 /* Pods_HYBaseTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYBaseTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42E40AE873E0009CA4B93376 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		4825195AD91EE7CA636A587C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		42E40AE873E0009CA4B93376 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4825195AD91EE7CA636A587C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4EA7CBFDBF12E4FC70129534 /* Pods-HYBaseTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYBaseTool_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HYBaseTool_Tests/Pods-HYBaseTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HYBaseTool_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYBaseTool_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8BA5B267D28670D7BC400585 /* HYBaseTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HYBaseTool.podspec; path = ../HYBaseTool.podspec; sourceTree = "<group>"; };
+		8BA5B267D28670D7BC400585 /* HYBaseTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HYBaseTool.podspec; path = ../HYBaseTool.podspec; sourceTree = "<group>"; };
 		9100F7BA597C03372227B9B6 /* Pods-HYBaseTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYBaseTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-HYBaseTool_Example/Pods-HYBaseTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B6E45FF6FFE32E009AC2BF42 /* Pods_HYBaseTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYBaseTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A522DF4AA8000ED6436EA2 /* Pods-HYBaseTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYBaseTool_Example.release.xcconfig"; path = "Target Support Files/Pods-HYBaseTool_Example/Pods-HYBaseTool_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				4EA7CBFDBF12E4FC70129534 /* Pods-HYBaseTool_Tests.debug.xcconfig */,
 				13031FFE000C96DFADFC1830 /* Pods-HYBaseTool_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				542CF1C17BD654FD3143B462 /* [CP] Embed Pods Frameworks */,
+				224ECFE8E69AB8A0F7032111 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,10 +253,11 @@
 				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "HYBaseTool" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,6 +295,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		224ECFE8E69AB8A0F7032111 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HYBaseTool_Example/Pods-HYBaseTool_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HYBaseTool_Example/Pods-HYBaseTool_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HYBaseTool_Example/Pods-HYBaseTool_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2BF9E4D73D264C332EA66570 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,24 +332,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		542CF1C17BD654FD3143B462 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HYBaseTool_Example/Pods-HYBaseTool_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HYBaseTool/HYBaseTool.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYBaseTool.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HYBaseTool_Example/Pods-HYBaseTool_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7E3A4B1E350763508021E9D0 /* [CP] Check Pods Manifest.lock */ = {
@@ -497,6 +496,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HYBaseTool/HYBaseTool-Prefix.pch";
 				INFOPLIST_FILE = "HYBaseTool/HYBaseTool-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +513,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HYBaseTool/HYBaseTool-Prefix.pch";
 				INFOPLIST_FILE = "HYBaseTool/HYBaseTool-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
