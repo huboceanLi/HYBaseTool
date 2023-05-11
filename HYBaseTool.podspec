@@ -28,7 +28,7 @@ A collection of basic tools
   s.source           = { :git => 'https://github.com/huboceanLi/HYBaseTool.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
   s.requires_arc = true
   s.swift_version = '5.0'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }

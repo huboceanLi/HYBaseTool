@@ -7,6 +7,7 @@
 //
 
 #import "HYAppDelegate.h"
+#import <HYBaseTool/HYBaseTool.h>
 
 @implementation HYAppDelegate
 
